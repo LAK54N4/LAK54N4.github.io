@@ -121,7 +121,7 @@ section .title::before {
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 300px;
     height: 3px;
     background: #111;
     transform: translate(-50%);
@@ -174,10 +174,10 @@ section .title::after {
     display: inline-block;
     background: #fcbb07;
     color: #3F0503;
-    font-size: 25px;
+    font-size: 24px;
     padding: 12px 36px;
-    margin-top: 20px;
-    font-weight: 400;
+    margin: 40px 15px 0 0;
+    font-weight: 200;
     border-radius: 10px;
     border: 2px solid #fcbb07;
     transition: all 0.3s ease;
@@ -201,16 +201,16 @@ section .title::after {
 }
 
 .about .title::after {
-    content: "who i am";
+    content: "siapa saya";
 }
 .about .about-content .left {
     width: 45%;
 }
 .about .about-content .left img{
     height: 400px;
-    width: 400px;
-    /* object-fit: cover; */
-    border-radius: 6px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 .about .about-content .right {
     width: 55%;
@@ -229,7 +229,7 @@ section .title::after {
 .about .about-content .right a {
     display: inline-block;
     background: #aa311c;
-    color: #fcbb07;
+    color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
@@ -254,7 +254,7 @@ section .title::after {
 .certificates .title::after {
     background: #aa311c;
     color: #fcbb07;
-    content: "what i provide";
+    content: "apa yang telah dibuat";
 }
 .services .serv-content .card {
     width: calc(33% - 20px);
@@ -266,7 +266,7 @@ section .title::after {
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover {
-    background: #aa311c;
+    background: #F98659;
 }
 .services .serv-content .card .box {
     transition: all 0.3s ease;
@@ -287,13 +287,17 @@ section .title::after {
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.services .serv-content .card a {
+    color: #fff;
+}
 
 .skills .title::after {
-    content: "what i know";
+    content: "apa yang diketahui";
 }
 .skills .skills-content .column {
     width: calc(50% - 30px);
 }
+/*
 .skills .skills-content .left .text {
     font-size: 20px;
     font-weight: 600;
@@ -317,26 +321,33 @@ section .title::after {
 .skills .skills-content .left a:hover {
     color: #aa311c;
     background: none;
-}
+} 
+*/
+.skills .skills-content .left .bars
 .skills .skills-content .right .bars {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
+.skills .skills-content .left .info,
 .skills .skills-content .right .info {
     display: flex;
+    margin-top: 20px;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
+.skills .skills-content .left span
 .skills .skills-content .right span {
     font-weight: 500;
     font-size: 18px;
 }
+.skills .skills-content .left .line,
 .skills .skills-content .right .line {
-    height: 5px;
+    height: 10px;
     width: 100%;
     background: #fcbb07;
     position: relative;
 }
+.skills .skills-content .left .line::before,
 .skills .skills-content .right .line::before {
     content: "";
     position: absolute;
@@ -345,32 +356,45 @@ section .title::after {
     top: 0;
     background: #aa311c;
 }
-.skills .skills-content .right .html::before {
-    width: 40%;
+.skills .skills-content .left .html::before {
+    width: 90%;
 }
-.skills .skills-content .right .css::before {
+.skills .skills-content .left .css::before {
+    width: 80%;
+}
+.skills .skills-content .left .js::before {
     width: 70%;
 }
-.skills .skills-content .right .js::before {
-    width: 70%;
+.skills .skills-content .left .mysql::before {
+    width: 75%;
 }
-.skills .skills-content .right .mysql::before {
-    width: 70%;
+.skills .skills-content .right .kotlin::before {
+    width: 75%;
+}
+.skills .skills-content .right .yii::before {
+    width: 75%;
+}
+.skills .skills-content .right .figma::before {
+    width: 90%;
+}
+.skills .skills-content .right .corel::before {
+    width: 80%;
 }
 
 .certificates .title::after {
-    content: "my certificate of competence";
+    content: "kompetensi";
 }
 .certificates .carousel .card {
-    background: #F98659;
+    background: #fcbb07;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    height: 22em;
 }
 .certificates .carousel .card:hover {
-    background: #3F0503;
+    background: #F98659;
 }
 .certificates .carousel .card .box {
     display: flex;
@@ -410,7 +434,7 @@ section .title::after {
     margin: 0.5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid #fcbb07!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active {
@@ -419,11 +443,11 @@ section .title::after {
 }
 .owl-dot.active, 
 .owl-dot:hover {
-    background: #aa311c!important;
+    background: #fcbb07!important;
 }
 
 .contact .title::after {
-    content: "get in touch";
+    content: "hubungi saya";
 }
 .contact .contact-content .column {
     width: calc(50% - 30px);
@@ -447,15 +471,23 @@ section .title::after {
 .contact .contact-content .row .info {
     margin-left: 30px;
 }
-.contact .contact-content .row i{
+.contact .contact-content .row i {
     font-size: 25px;
     color: #aa311c;
+    width: 20px;
 }
 .contact .contact-content .info .head {
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title {
     color: #3F0503;
+}
+.contact .contact-content .info .sub-title a {
+    color: #3F0503;
+}
+.contact .contact-content .info .sub-title a:hover {
+    color: #fcbb07;
+    text-decoration: underline;
 }
 .contact .right form .fields {
     display: flex;
@@ -498,19 +530,19 @@ section .title::after {
     align-items: center;
 }
 .right form .button-area button {
-    color: #fcbb07;
+    color: #fff;
     display: block;
-  width: 160px!important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: #aa311c;
-  border: 2px solid #aa311c;
-  transition: all 0.3s ease;
+    width: 160px!important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: #aa311c;
+    border: 2px solid #aa311c;
+    transition: all 0.3s ease;
 }
 .right form .button-area button:hover {
     color: #aa311c;

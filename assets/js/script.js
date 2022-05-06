@@ -32,15 +32,15 @@ $(document).ready(function(){
 
     //typing
     let typed = new Typed(".typing", {
-        strings: ["Web Developer", "Mobile Developer", "UI/UX Designer"],
-        typedSpeed: 100,
-        backSpeed: 60,
+        strings: ["Web Developer", "Android Developer", "UI/UX Designer"],
+        typedSpeed: 200,
+        backSpeed: 50,
         loop: true
     });
     typed = new Typed(".typing-2", {
-        strings: ["Web Developer", "Mobile Developer", "UI/UX Designer"],
-        typedSpeed: 100,
-        backSpeed: 60,
+        strings: ["Web Developer", "Android Developer", "UI/UX Designer"],
+        typedSpeed: 200,
+        backSpeed: 50,
         loop: true
     });
 

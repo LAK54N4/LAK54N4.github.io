@@ -5,6 +5,7 @@
     <title>Portfolio Laksana</title>
     <link rel="stylesheet" href="../../assets/css/style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -22,12 +23,12 @@
                         <a href="#">Lak<span>54</span>na</a>
                     </div>
                     <ul class="menu">
-                        <li><a href="#home" class="menu-btn">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#home" class="menu-btn" >Home</a></li>
+                        <li><a href="#about">Tentang</a></li>
                         <li><a href="#services">Portfolio</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#certificates">Certificates</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#skills">Kecakapan</a></li>
+                        <li><a href="#certificates">Sertifikat</a></li>
+                        <li><a href="#contact">Kontak</a></li>
                     </ul>
                     <div class="menu-btn">
                         <i class="fas fa-bars"></i>
@@ -38,89 +39,75 @@
         <section class="home" id="home">
             <div class="max-width">
                 <div class="home-content">
-                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-1">Halo, nama saya</div>
                     <div class="text-2">Laksana Sulasmara</div>
-                    <div class="text-3">And I'm a <span class="typing"></span></div>
-                    <a href="#">Hire me</a>
+                    <div class="text-3">Saya seorang <span class="typing"></span></div>
+                    <a href="#about">Selengkapnya</a>
                 </div>
             </div>
         </section>
         <section class="about" id="about">
             <div class="max-width">
-                <h2 class="title">About me</h2>
+                <h2 class="title">Tentang</h2>
                 <div class="about-content">
                     <div class="column left">
                         <img src="./assets/images/fotoku.JPG" alt="foto">
                     </div>
                     <div class="column right">
-                        <div class="text">I'm Laksana and I'm a <span class="typing-2"></span></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quasi ut voluptatum eveniet doloremque autem excepturi eaque, 
-                            sit laboriosam voluptatem nisi delectus. Facere explicabo hic 
-                            minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, 
-                            odio consequatur ipsam possimus veritatis, placeat, ab molestiae 
-                            velit inventore exercitationem consequuntur blanditiis omnis beatae. 
-                            Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae 
-                            harum non.</p>
-                            <a href="#">Download CV</a>
+                        <div class="text">Saya Laksana, saya <span class="typing-2"></span></div>
+                        <p>
+                            Alumni program studi Informatika Fakultas Teknologi Informasi Universitas Teknologi Digital Indonesia 
+                            (d.h STMIK AKAKOM Yogyakarta). Memiliki minat dalam pengembangan aplikasi seluler dan web. Seorang 
+                            pekerja keras dan penuh tanggung jawab yang dapat bekerja dalam tim maupun individu. Menyukai tantangan 
+                            dan mau belajar keterampilan baru. Hobi bersepeda dan mendaki gunung.
+                        </p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1W07ffmlJEkt2rhWi4nJkNh2f1nbyknPH/view?usp=sharing">Download CV</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="services" id="services">
             <div class="max-width">
-                <h2 class="title">My Portfolio</h2>
+                <h2 class="title">Portfolio</h2>
                 <div class="serv-content">
                     <div class="card">
-                        <div class="box">
-                            <i class="fas fa-paint-brush"></i>
-                            <div class="text">UI/UX Design</div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                Rem quia sunt, quasi quo illo enim.</p>
-                        </div>
+                        <a href="./portfolio-uiux.html">
+                            <div class="box">
+                                <i class="fas fa-paint-brush"></i>
+                                <div class="text">UI/UX Designer</div>
+                            </div>
+                        </a>
                     </div>
                     <div class="card">
-                        <a href="./mobile.html">
+                        <a href="./portfolio-android.html">
                         <div class="box">
-                            <i class="fa fa-mobile-alt"></i>
+                            <i class="fa fa-mobile-phone"></i>
                             <div class="text">
-                                    Mobile App Developer
+                                    Android Developer
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                Rem quia sunt, quasi quo illo enim.</p>
                         </div>
                         </a>
                     </div>
                     <div class="card">
-                        <div class="box">
-                            <i class="fas fa-desktop"></i>
-                            <div class="text">Web Developer</div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                Rem quia sunt, quasi quo illo enim.</p>
-                        </div>
+                        <a href="./portfolio-web.html">
+                            <div class="box">
+                                <i class="fas fa-desktop"></i>
+                                <div class="text">Web Developer</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="skills" id="skills">
             <div class="max-width">
-                <h2 class="title">My Skills</h2>
+                <h2 class="title">Kecakapan</h2>
                 <div class="skills-content">
                     <div class="column left">
-                        <div class="text">My creative skills & experiences</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, 
-                            ratione error est recusandae consequatur, iusto illum deleniti quidem 
-                            impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium 
-                            esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? 
-                            Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.
-                        </p>
-                        <a href="#">Read more</a>
-                    </div>
-                    <div class="column right">
                         <div class="bars">
                             <div class="info">
                                 <span>HTML</span>
-                                <span>80%</span>
+                                <span>90%</span>
                             </div>
                             <div class="line html"></div>
                         </div>
@@ -141,9 +128,39 @@
                         <div class="bars">
                             <div class="info">
                                 <span>MySQL</span>
-                                <span>80%</span>
+                                <span>75%</span>
                             </div>
                             <div class="line mysql"></div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="bars">
+                            <div class="info">
+                                <span>Kotlin</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="line kotlin"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Yii Framework</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="line yii"></div>
+                        </div>
+                        <div class="bars">    
+                            <div class="info">
+                                <span>Figma</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="line figma"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Corel Draw</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line corel"></div>
                         </div>
                     </div>
                 </div>
@@ -151,14 +168,21 @@
         </section>
         <section class="certificates" id="certificates">
             <div class="max-width">
-                <h2 class="title">My Certificates</h2>
+                <h2 class="title">Sertifikat</h2>
                 <div class="carousel owl-carousel">
                     <div class="card">
                         <div class="box">
                             <a target="_blank" href="/assets/images/Sertifikat-BFAA.png">
+                                <img src="/assets/images/Sertifikat Prinsip Pemrograman SOLID.png" alt="certificates">
+                                <div class="text">Prinsip Pemrograman SOLID</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <a target="_blank" href="/assets/images/Sertifikat-BFAA.png">
                                 <img src="/assets/images/Sertifikat-BFAA.png" alt="certificates">
-                                <div class="text">Belajar Fundamental Aplikasi Android</div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="text">Fundamental Aplikasi Android</div>
                             </a>
                         </div>
                     </div>
@@ -166,7 +190,7 @@
                         <div class="box">
                             <a target="_blank" href="/assets/images/Sertifikat-BAJP.png">
                                 <img src="/assets/images/Sertifikat-BAJP.png" alt="certificates">
-                                <div class="text">Belajar Android Jetpack Pro</div>
+                                <div class="text">Android Jetpack Pro</div>
                             </a>
                         </div>
                     </div>
@@ -178,31 +202,51 @@
                            </a>
                         </div>
                     </div>
+                    <div class="card">
+                        <div class="box">
+                           <a target="_blank" href="/assets/images/sertifikat_course_Dasar Pemrograman Web-1.jpg">
+                                    <img src="/assets/images/sertifikat_course_Dasar Pemrograman Web-1.jpg" alt="certificates">      
+                                    <div class="text">Dasar Pemrograman Web</div>         
+                           </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                           <a target="_blank" href="/assets/images/sertifikat_course_Dasar Pemrograman Javascript-1.jpg">
+                                    <img src="/assets/images/sertifikat_course_Dasar Pemrograman Javascript-1.jpg" alt="certificates">      
+                                    <div class="text">Dasar Pemrograman Javascript<div>         
+                           </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                           <a target="_blank" href="/assets/images/sertifikat_course_Fundamental Aplikasi Backend-1.jpg">
+                                    <img src="/assets/images/sertifikat_course_Fundamental Aplikasi Backend-1.jpg" alt="certificates">      
+                                    <div class="text">Fundamental Aplikasi Backend</div>         
+                           </a>
+                        </div>
+                    </div>
                 </div>
-                
-            </div>       
+            </div>                
         </section>
         <section class="contact" id="contact">
             <div class="max-width">
-                <h2 class="title">Contact me</h2>
+                <h2 class="title">Kontak</h2>
                 <div class="contact-content">
                     <div class="column left">
-                        <div class="text">Get in Touch</div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Dignissimos harum corporis fuga corrupti. Doloribus quis
-                             soluta nesciunt veritatis vitae nobis?</p>
+                        <div class="text">Hubungi</div>
                         <div class="icons">
                             <div class="row">
                                 <i class="fas fa-user"></i>
                                 <div class="info">
-                                    <div class="head">Name</div>
+                                    <div class="head">Nama</div>
                                     <div class="sub-title">Laksana Sulasmara</div>
                                 </div>
                             </div>
                             <div class="row">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div class="info">
-                                    <div class="head">Address</div>
+                                    <div class="head">Alamat</div>
                                     <div class="sub-title">Kulon Progo, Yogyakarta</div>
                                 </div>
                             </div>
@@ -210,30 +254,44 @@
                                 <i class="fas fa-envelope"></i>
                                 <div class="info">
                                     <div class="head">Email</div>
-                                    <div class="sub-title">lak54na@gmail.com</div>
+                                    <div class="sub-title">
+                                        <a target="_top" href="mailto:laksanasulasmara@gmail.com">laksanasulasmara@gmail.com</a>            
+                                        
+                                    </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <i class="fa fa-whatsapp"></i>
+                                <div class="info">
+                                    <div class="head">Whatsapp</div>
+                                    <div class="sub-title">
+                                        <a target="_top" href="whatsapp://send?text=Hello&phone=+6285643611388">+6285643611388</a>            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
                         </div>
                     </div>
                     <div class="column right">
-                        <div class="text">Message me</div>
-                        <form action="#">
+                        <div class="text">Pesan </div>
+                        <form action="mailto:laksanasulasmara@gmail.com">
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" placeholder="Name" required>
+                                    <input type="text" placeholder="Nama" required>
                                 </div>
                                 <div class="field email">
                                     <input type="email" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="field">
-                                <input type="text" placeholder="Subject" required>
+                                <input type="text" placeholder="Subyek" required>
                             </div>
                             <div class="field textarea">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Message.." required></textarea>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Pesan.." required></textarea>
                             </div>
                             <div class="button-area">
-                                <button type="submit">Send Message</button>
+                                <button type="submit">Kirim Pesan</button>
                             </div>
                         </form>
                     </div>
@@ -241,7 +299,7 @@
             </div>
         </section>
         <footer>
-            <span>Created By <a href="lak54naprofile.com">Laksana-Profile</a></span>
+            <span>Created By <a href="lak54n4.github.io">Laksana</a></span>
             <span class="far fa-copyright">2022 All rights reserved</span>
         </footer>
         <script src="assets/js/script.js"></script>
